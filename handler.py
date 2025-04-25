@@ -6,7 +6,7 @@ from io import BytesIO
 from PIL import Image
 
 # Your Hugging Face access token
-access_token = "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"
+access_token = "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"
 
 # Load model
 pipe = DiffusionPipeline.from_pretrained(
