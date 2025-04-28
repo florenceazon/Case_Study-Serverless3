@@ -4,9 +4,13 @@ import torch
 import base64
 from io import BytesIO
 from PIL import Image
+from huggingface_hub import login
+import os
+
+login(token=os.getenv("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"))  # or pass the token directly
 
 # Your Hugging Face access token
-access_token = "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"
+access_token = "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"
 
 # Load model
 pipe = DiffusionPipeline.from_pretrained(
